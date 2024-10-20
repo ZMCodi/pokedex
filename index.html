@@ -28,11 +28,21 @@
 						<div class="b4"></div>
 						<div class="b4"></div>
 					</div>
+					<div class="hidden error-screen">
+						<p id="no-input">Please enter a Pokemon name or ID</p>
+    					<img id="no-input-img" src="snorlax-error.png" alt="snorlax">
+					</div>
+					<div class="hidden invalid-screen">
+						<p id="invalid-input">This Pokemon is not in our database</p>
+    					<img id="invalid-input-img" src="prof-oak-error.png" alt="professor oak">
+					</div>
 					<div class="screen">
-						<p id="pokemon-name">Eternatus</p>
-						<img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png">
-						<p id="weight">Weight: 9500</p>
-						<p id="height">Height: 200</p>
+						<p id="start-greeting">Welcome to the Pokedex</p>
+						<p id="pokemon-name"></p>
+						<img id="start-screen" src="pokeballdefault.png" alt="pokeball">
+						<img id="sprite" src="" alt="">
+						<p id="weight"></p>
+						<p id="height"></p>
 					</div>
 					<div class="slasher4"></div>
 					<div class="red-button"></div>
@@ -52,7 +62,7 @@
 						<div class="bar2"></div>
 					</div>
 					<div class="pokedex-number">
-						<p id="pokemon-id">890</p>
+						<p id="pokemon-id"></p>
 					</div>
 					<div class="d-pad">
 						<div class="dpad"></div>
@@ -74,14 +84,14 @@
 			</div>
 			<div class="main-part-right">
 				<div class="stats-screen">
-					<input type="text" id="search-input" placeholder="Enter Pokemon name or ID">
+					<input type="text" id="search-input" placeholder="Enter Pokemon name or ID" autocomplete="off" required>
 					<div class="stats-container">
-						<p id="hp">HP: 140</p>
-						<p id="defense">DEF: 95</p>
-						<p id="special-attack">SA: 145</p>
-						<p id="attack">ATK: 85</p>
-						<p id="speed">SPD: 130</p>
-						<p id="special-defense">SD: 145</p>
+						<p id="hp">HP: </p>
+						<p id="defense">DEF: </p>
+						<p id="special-attack">SA: </p>
+						<p id="attack">ATK: </p>
+						<p id="speed">SPD: </p>
+						<p id="special-defense">SD: </p>
 					</div>
 				</div>
 				<div class="random-buttons">
@@ -112,10 +122,10 @@
 					<button id="search-button">Find</button>
 					<div id="types">
 						<div class="type1">
-							<p>POISON</p>
+							<p id="type1"></p>
 						</div>
 						<div class="type2">
-							<p>DRAGON</p>
+							<p id="type2"></p>
 						</div>
 					</div>
 				</div>
