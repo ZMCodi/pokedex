@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<title>Document</title>
+	<link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+	<link rel="shortcut icon" href="pokeball.ico" />
+	<title>Pokedex</title>
 </head>
 <body>
 	<div class="main-container">
@@ -21,13 +23,18 @@
 				</div>
 			</div>
 			<div class="main-part-left">
-				<div class="slasher4"></div>
 				<div class="pokemon-screen">
 					<div class="top-button">
 						<div class="b4"></div>
 						<div class="b4"></div>
 					</div>
-					<div class="screen"></div>
+					<div class="screen">
+						<p id="pokemon-name">Eternatus</p>
+						<img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png">
+						<p id="weight">Weight: 9500</p>
+						<p id="height">Height: 200</p>
+					</div>
+					<div class="slasher4"></div>
 					<div class="red-button"></div>
 					<div class="speakers">
 						<div class="speaker"></div>
@@ -45,7 +52,7 @@
 						<div class="bar2"></div>
 					</div>
 					<div class="pokedex-number">
-						<div class="inner-number"></div>
+						<p id="pokemon-id">890</p>
 					</div>
 					<div class="d-pad">
 						<div class="dpad"></div>
@@ -67,7 +74,15 @@
 			</div>
 			<div class="main-part-right">
 				<div class="stats-screen">
-					<input type="text" id="search-input" placeholder="Enter Pokemon name or number">
+					<input type="text" id="search-input" placeholder="Enter Pokemon name or ID">
+					<div class="stats-container">
+						<p id="hp">HP: 140</p>
+						<p id="defense">DEF: 95</p>
+						<p id="special-attack">SA: 145</p>
+						<p id="attack">ATK: 85</p>
+						<p id="speed">SPD: 130</p>
+						<p id="special-defense">SD: 145</p>
+					</div>
 				</div>
 				<div class="random-buttons">
 					<div class="random-button"></div>
@@ -94,10 +109,14 @@
 						<div class="left"></div>
 						<div class="right"></div>
 					</div>
-					<div class="play-button"></div>
-					<div class="type-container">
-						<div class="type"></div>
-						<div class="type"></div>
+					<button id="search-button">Find</button>
+					<div id="types">
+						<div class="type1">
+							<p>POISON</p>
+						</div>
+						<div class="type2">
+							<p>DRAGON</p>
+						</div>
 					</div>
 				</div>
 			</div>
