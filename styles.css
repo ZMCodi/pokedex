@@ -493,6 +493,7 @@ body {
 }
 
 #search-input::placeholder {
+  color: black;
   text-align: center;
   font-family: 'ArcadeClassic', sans-serif;                           
 }
